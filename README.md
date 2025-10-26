@@ -1,12 +1,12 @@
-# Volume correction for ACDI
+# Volume corrected flood-fill algorithm for diffuse-interface methods
 
-In the paper, they address the challenge of accurately calculating droplet/bubble
+In this work, we address the challenge of accurately calculating droplet/bubble
 properties (e.g., volume, number) in diffuse-interface two-phase flow simulations.
 Currently, flood-fill algorithms can truncate a significant portion of the volume
 of droplets/bubbles contained within the diffuse interface region or artificially
 merge multiple droplets/bubbles. This error is also dependent on the volume fraction
 cutoff value, which is typically chosen to be 0.5 arbitrarily, in the flood-fill
-algorithms. They propose a simple volume-correction approach that incorporates an
+algorithms. We propose a simple volume-correction approach that incorporates an
 analytical approximation of the truncated volume to correct for the missing
 droplet/bubble volumes. The proposed method results in accurately recovering the
 dispersed phase volumes with minimal volume error over a wide range of volume
